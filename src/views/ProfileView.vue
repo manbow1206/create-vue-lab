@@ -1,5 +1,5 @@
 <template>
-  <div class="profile">
+  <div class="profile text-3xl font-bold underline text-white">
     <h1>This is a profile page</h1>
   </div>
 </template>
