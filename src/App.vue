@@ -1,17 +1,23 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from '@/components/HelloWorld.vue'
-import {useCounterStore} from "./stores/counter.js"
-const counter = useCounterStore()
+import { RouterLink, RouterView } from "vue-router";
+import HelloWorld from "@/components/HelloWorld.vue";
+import { useCounterStore } from "./stores/counter.js";
+const counter = useCounterStore();
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img
+      alt="Vue logo"
+      class="logo"
+      src="@/assets/logo.svg"
+      width="125"
+      height="125"
+    />
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
-         <div>
+      <div>
         Count:{{ counter.counter }}
         <button @click="counter.increment">Up</button>
       </div>
@@ -19,7 +25,7 @@ const counter = useCounterStore()
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
-  <RouterLink to="/profile">Profile</RouterLink>
+        <RouterLink to="/profile">Profile</RouterLink>
       </nav>
     </div>
   </header>
@@ -28,7 +34,7 @@ const counter = useCounterStore()
 </template>
 
 <style>
-@import '@/assets/base.css';
+@import "@/assets/base.css";
 
 #app {
   max-width: 1280px;
